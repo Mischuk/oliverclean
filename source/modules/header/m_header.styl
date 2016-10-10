@@ -1,6 +1,204 @@
 .m_header
-  background #3b3a36
-  height 70px
-  line-height 70px
-  text-align center
-  color #fff
+  background #fff
+  height 110px
+  box-shadow 0 5px 16px rgba(0,0,0,.2)
+  @media SM
+    clearfix()
+    height 80px
+  .container-fluid
+    position relative
+    padding-left 0
+    padding-right 0
+    @media MD
+      padding-left 15px
+      padding-right 15px
+  .logo
+    float left
+    width 60%
+    line-height 60px
+    padding 0 10px
+    @media SM
+      position absolute
+      z-index 1
+      left 0
+      top 0
+      width 218px
+      padding 0
+      line-height 80px
+      padding-left 15px
+    @media MD
+      padding-left 0
+      left 15px
+    img
+      max-width 100%
+  .controls
+    float left
+    width 40%
+    height 60px
+    @media SM
+      clearfix()
+      position relative
+      width 100%
+      float none
+      padding-left 270px
+      line-height 80px
+      height 80px
+      padding-right 15px
+    @media MD
+      width 730px
+      float right
+      margin-right 230px
+    @media LG
+      float none
+      width 850px
+      padding-left 330px
+  nav
+    @media SM
+      float left
+    ul
+      @media SM
+        display table
+        height 80px
+        line-height 80px
+      li
+        & + li
+          display none
+          @media SM
+            display table-cell
+            vertical-align middle
+            padding 0 15px
+            line-height 1
+        &.sitemap
+          @media SM
+            display table-cell
+            vertical-align middle
+            padding-left 30px
+            padding-right 30px
+            position relative
+            line-height 1
+          a > span
+            display none
+            @media SM
+              display inline-block
+              vertical-align top
+              color #000
+              border-bottom 1px dotted #000
+              line-height 1
+              &:hover
+                border-color transparent
+        a
+          color #000
+          &:hover
+            text-decoration none
+
+  .search
+    line-height 60px
+    text-align right
+    padding-right 60px
+    @media SM
+      float right
+      padding-right 10px
+      line-height 80px
+    .show-search
+      display inline-block
+      vertical-align middle
+      size(20px)
+      background: url('../images/sprite.png') no-repeat 0 0;
+    form
+      display none
+      position absolute
+      z-index 10
+      left 0
+      top 0
+      width 100%
+      padding-right 50px
+      padding-left 10px
+      @media SM
+        padding-right 15px
+        padding-left 270px
+      input[type="text"]
+        anim()
+        width 100%
+        line-height 40px
+        border none
+        padding-left 10px
+        color #555
+        font-family 'Exo 2 Condensed'
+        font-weight 300
+        padding-right 40px
+        &:focus
+          box-shadow 0 5px 16px rgba(0,0,0,.2)
+      input[type="submit"]
+        size(20px)
+        background: url('../images/sprite.png') no-repeat 0 0
+        position absolute
+        right 60px
+        top 22px
+        border none
+        @media SM
+          right 25px
+          top 32px
+  .contacts
+    background #041c40
+    float left
+    width 100%
+    height 50px
+    display table
+    padding 0 10px
+    @media SM
+      padding 0 15px
+    @media MD
+      display block
+      position absolute
+      right 0
+      top 0
+      width 230px
+      height 135px
+      text-align center
+    @media LG
+      width 270px
+    > div
+      display table-cell
+      vertical-align middle
+      @media MD
+        display block
+    .tel
+      text-align left
+      @media MD
+        text-align center
+        padding-top 20px
+        padding-bottom 5px
+      a
+        color #fff
+        font-weight bold
+        text-decoration none
+        cursor default
+        font-size 18px
+        @media SM
+          font-size 24px
+    .callback
+      display none
+      @media XS
+        display table-cell
+      @media MD
+        display block
+        padding-bottom 15px
+      a
+        color #fff
+        text-decoration none
+        border-bottom 1px dotted #fff
+        &:hover
+          border-color transparent
+    .action
+      a
+        anim()
+        display block
+        color #fff
+        text-decoration none
+        text-transform uppercase
+        background $button
+        line-height 32px
+        text-align center
+        &:hover
+          background $button - 10%
+

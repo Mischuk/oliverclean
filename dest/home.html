@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="msapplication-tap-highlight" content="no">
-		<link type="image/x-icon" href="favicon.ico" rel="icon">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:300,400&amp;subset=cyrillic" rel="stylesheet">
 		<link href="css/plugins.css" rel="stylesheet">
 		<link href="css/app.min.css" rel="stylesheet">
 	</head>
@@ -15,20 +15,423 @@
 	<body>
 		<!-- HEADER-->
 		<header class="m_header">
-			<div class="wrapper">header</div>
-		</header>
-		<!-- Main-->
-		<div class="container">
-			<div class="wrapper">
-				<h1>Hello, world!</h1>
+			<div class="container-fluid">
+				<div class="logo">
+					<a href="#">
+						<img src="images/logo.png" alt>
+					</a>
+				</div>
+				<div class="controls">
+					<nav>
+						<ul>
+							<li class="sitemap">
+								<a href="#sitemap">
+									<span>Весь сайт</span>
+									<div class="mobile-menu-trigger">
+										<span></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">О компании</a>
+							</li>
+							<li>
+								<a href="#">Услуги</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="search">
+						<a class="show-search" href="#"></a>
+						<form>
+							<input type="text" placeholder>
+							<input type="submit" value>
+						</form>
+					</div>
+				</div>
+				<div class="contacts">
+					<div class="tel">
+						<a href="#">+7 (812) 550-07-70</a>
+					</div>
+					<div class="callback">
+						<a href="#">Связаться с нами</a>
+					</div>
+					<div class="action">
+						<a href="#">Онлайн заявка</a>
+					</div>
+				</div>
 			</div>
+		</header>
+		<!-- Sitemap-->
+		<div class="zoom-anim-dialog mfp-hide" id="sitemap">
+			<div class="main-sections">
+				<div class="title">О компании</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="#">О нас</a>
+						</li>
+						<li>
+							<a href="#">Наша команда</a>
+						</li>
+						<li>
+							<a href="#">Истории клиентов</a>
+						</li>
+						<li>
+							<a href="#">Вакансии</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="secondary-sections">
+				<div class="title">Услуги</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<nav>
+							<p>Обслуживание зданий и сооружений</p>
+							<ul>
+								<li>
+									<a href="#">Комплексная поддерживающая уборка</a>
+								</li>
+								<li>
+									<a href="#">Генеральная уборка</a>
+								</li>
+								<li>
+									<a href="#">Послестроительная уборка</a>
+								</li>
+								<li>
+									<a href="#">Мойка фасадов, витражей, окон</a>
+								</li>
+								<li>
+									<a href="#">Обеспечение расходными материалами сан. зон</a>
+								</li>
+								<li>
+									<a href="#">Разработка и внедрение систем грязезащиты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<nav>
+							<p>Обслуживание территорий</p>
+							<ul>
+								<li>
+									<a href="#">Генеральная уборка территорий</a>
+								</li>
+								<li>
+									<a href="#">Поддерживающая уборка, лето/зима</a>
+								</li>
+								<li>
+									<a href="#">Вывоз снега</a>
+								</li>
+								<li>
+									<a href="#">Вывоз ТБО</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<nav>
+							<p>Специализированные работы</p>
+							<ul>
+								<li>
+									<a href="#">Химическая чистка ковровых покрытий</a>
+								</li>
+								<li>
+									<a href="#">Химическая чистка текстильных поверхностей, мебели</a>
+								</li>
+								<li>
+									<a href="#">Нанесение полимерных покрытий</a>
+								</li>
+								<li>
+									<a href="#">Шлифовка/Полировка искуственных и натуральных поверхностей</a>
+								</li>
+								<li>
+									<a href="#">Кристализация мраморных полов</a>
+								</li>
+								<li>
+									<a href="#">Глубокая чиста пола</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<nav>
+							<p>Клининговый консалтинг</p>
+							<ul>
+								<li>
+									<a href="#">Консультирование</a>
+								</li>
+								<li>
+									<a href="#">Организация службы клининга</a>
+								</li>
+								<li>
+									<a href="#">Аудит</a>
+								</li>
+								<li>
+									<a href="#">Обучение персонала</a>
+								</li>
+								<li>
+									<a href="#">Побор персонала в сфере клининга</a>
+								</li>
+								<li>
+									<a href="#">Оптимизация расходов</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<h1>Hello, world!</h1>
 		</div>
 		<!-- FOOTER-->
 		<footer class="m_footer">
-			<div class="wrapper">footer</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4">
+						<p>© ООО «Оливер Клин», 2016</p>
+						<p>196210, Санкт-Петербург, ул. Название улицы, д. 2, лит. С.</p>
+						<p>Телефон:
+							<b>8 (800) 380-30-30</b>,
+							<b>+7(812) 380-30-30</b>
+						</p>
+						<div class="socials">Мы в соц. сетях:
+							<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+							<script src="//yastatic.net/share2/share.js"></script>
+							<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,linkedin" style="display: inline-block; vertical-align: middle;"></div>
+						</div>
+					</div>
+					<div class="col-sm-4 hidden-xs">
+						<nav>
+							<p>Обслуживание зданий и сооружений</p>
+							<ul>
+								<li>
+									<a href="#">Комплексная поддерживающая уборка</a>
+								</li>
+								<li>
+									<a href="#">Генеральная уборка</a>
+								</li>
+								<li>
+									<a href="#">Послестроительная уборка</a>
+								</li>
+								<li>
+									<a href="#">Мойка фасадов, витражей, окон</a>
+								</li>
+								<li>
+									<a href="#">Обеспечение расходными материалами сан. зон</a>
+								</li>
+								<li>
+									<a href="#">Разработка и внедрение систем грязезащиты</a>
+								</li>
+							</ul>
+						</nav>
+						<nav>
+							<p>Обслуживание территорий</p>
+							<ul>
+								<li>
+									<a href="#">Генеральная уборка территорий</a>
+								</li>
+								<li>
+									<a href="#">Поддерживающая уборка, лето/зима</a>
+								</li>
+								<li>
+									<a href="#">Вывоз снега</a>
+								</li>
+								<li>
+									<a href="#">Вывоз ТБ</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-sm-4 hidden-xs">
+						<nav>
+							<p>Специализированные работы</p>
+							<ul>
+								<li>
+									<a href="#">Химическая чистка ковровых покрытий</a>
+								</li>
+								<li>
+									<a href="#">Химическая чистка текстильных поверхностей, мебели</a>
+								</li>
+								<li>
+									<a href="#">Нанесение полимерных покрытий</a>
+								</li>
+								<li>
+									<a href="#">Шлифовка/Полировка искуственных и натуральных поверхностей</a>
+								</li>
+								<li>
+									<a href="#">Кристализация мраморных полов</a>
+								</li>
+								<li>
+									<a href="#">Глубокая чиста пола</a>
+								</li>
+							</ul>
+						</nav>
+						<nav>
+							<p>Клининговый консалтинг</p>
+							<ul>
+								<li>
+									<a href="#">Консультирование</a>
+								</li>
+								<li>
+									<a href="#">Организация службы клининга</a>
+								</li>
+								<li>
+									<a href="#">Аудит</a>
+								</li>
+								<li>
+									<a href="#">Обучение персонала</a>
+								</li>
+								<li>
+									<a href="#">Побор персонала в сфере клининга</a>
+								</li>
+								<li>
+									<a href="#">Оптимизация расходов</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="copyright">
+					<a href="#"></a>
+				</div>
+			</div>
 		</footer>
-		<!-- Popups background layer-->
-		<div class="background-layer"></div>
+		<!-- Sitemap-->
+		<div class="zoom-anim-dialog mfp-hide" id="sitemap">
+			<div class="main-sections">
+				<div class="title">О компании</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="#">О нас</a>
+						</li>
+						<li>
+							<a href="#">Наша команда</a>
+						</li>
+						<li>
+							<a href="#">Истории клиентов</a>
+						</li>
+						<li>
+							<a href="#">Вакансии</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="secondary-sections">
+				<div class="title">Услуги</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<nav>
+							<p>Обслуживание зданий и сооружений</p>
+							<ul>
+								<li>
+									<a href="#">Комплексная поддерживающая уборка</a>
+								</li>
+								<li>
+									<a href="#">Генеральная уборка</a>
+								</li>
+								<li>
+									<a href="#">Послестроительная уборка</a>
+								</li>
+								<li>
+									<a href="#">Мойка фасадов, витражей, окон</a>
+								</li>
+								<li>
+									<a href="#">Обеспечение расходными материалами сан. зон</a>
+								</li>
+								<li>
+									<a href="#">Разработка и внедрение систем грязезащиты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<nav>
+							<p>Обслуживание территорий</p>
+							<ul>
+								<li>
+									<a href="#">Генеральная уборка территорий</a>
+								</li>
+								<li>
+									<a href="#">Поддерживающая уборка, лето/зима</a>
+								</li>
+								<li>
+									<a href="#">Вывоз снега</a>
+								</li>
+								<li>
+									<a href="#">Вывоз ТБО</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<nav>
+							<p>Специализированные работы</p>
+							<ul>
+								<li>
+									<a href="#">Химическая чистка ковровых покрытий</a>
+								</li>
+								<li>
+									<a href="#">Химическая чистка текстильных поверхностей, мебели</a>
+								</li>
+								<li>
+									<a href="#">Нанесение полимерных покрытий</a>
+								</li>
+								<li>
+									<a href="#">Шлифовка/Полировка искуственных и натуральных поверхностей</a>
+								</li>
+								<li>
+									<a href="#">Кристализация мраморных полов</a>
+								</li>
+								<li>
+									<a href="#">Глубокая чиста пола</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<nav>
+							<p>Клининговый консалтинг</p>
+							<ul>
+								<li>
+									<a href="#">Консультирование</a>
+								</li>
+								<li>
+									<a href="#">Организация службы клининга</a>
+								</li>
+								<li>
+									<a href="#">Аудит</a>
+								</li>
+								<li>
+									<a href="#">Обучение персонала</a>
+								</li>
+								<li>
+									<a href="#">Побор персонала в сфере клининга</a>
+								</li>
+								<li>
+									<a href="#">Оптимизация расходов</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- JS-->
 		<script src="js/modernizr.js"></script>
 		<script src="js/jquery.min.js"></script>

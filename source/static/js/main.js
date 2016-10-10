@@ -1,9 +1,6 @@
 $(function() {
     $('a[href="#"]').click(function(e){ e.preventDefault(); });
 
-    /*! Polyfill to remove click delays on browsers with touch UIs */
-    FastClick.attach(document.body);
-
 
     /*! IE10 viewport hack for Surface/desktop Windows 8 bug */
     (function () {

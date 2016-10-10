@@ -1,3 +1,25 @@
-// HEADER
+// Header
 header.m_header
-  .wrapper header
+  .container-fluid
+    .logo: a(href="#"): img(src="images/logo.png" alt="")
+    .controls
+      nav
+        ul
+          li.sitemap: a(href="#sitemap")
+            span Весь сайт
+            .mobile-menu-trigger
+              span
+          li: a(href="#") О компании
+          li: a(href="#") Услуги
+          li: a(href="#") Контакты
+      .search
+        a(class="show-search" href="#")
+        form
+          input(type="text" placeholder="")
+          input(type="submit" value="")
+    .contacts
+      .tel: a(href="#") +7 (812) 550-07-70
+      .callback: a(href="#") Связаться с нами
+      .action: a(href="#") Онлайн заявка
+
+

@@ -3,7 +3,42 @@
   left 0
   bottom 0
   width 100%
-  background #3b3a36
-  color #fff
-  text-align center
-  line-height 200px
+  background #051d41
+  color #dedede
+  font-weight 300
+  @media XS
+    padding-top 15px
+  @media MD
+    padding-top 30px
+  b
+    font-weight 700
+    display inline-block
+  p
+    margin 15px 0
+  .copyright a
+    position absolute
+    left 15px
+    bottom 30px
+    background: url('../images/sprite.png') no-repeat 0 -100px;
+    width: 80px;
+    height: 21px;
+    @media LG
+      left 50%
+      margin-left -575px
+  .socials
+    @media XS
+      margin-top 35px
+      margin-bottom 35px
+  nav
+    padding-bottom 30px
+    p
+      text-transform uppercase
+      font-weight 500
+    li
+      & + li
+        margin-top 10px
+    a
+      color #dedede
+      text-decoration underline
+      &:hover
+        text-decoration none
