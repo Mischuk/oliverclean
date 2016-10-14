@@ -1,0 +1,66 @@
+form
+  .input, textarea
+    width 100%
+    background #fff
+    font-size 18px
+    padding 0 10px
+    margin-bottom 30px
+    border 2px solid #fff
+    &:focus
+      border-color $yellow
+  .input
+    height 50px
+  textarea
+    height 100px
+    padding-top 5px
+    padding-bottom 5px
+  .submit
+    width 100%
+    line-height 50px
+    margin-top 30px
+    @media SM
+      margin-top 0
+      max-width 370px
+      width 370px
+  .file-upload
+    input[type="file"]
+      opacity 0
+      visibility hidden
+      width 0
+      height 0
+      position absolute
+    label
+      display inline-block
+      vertical-align middle
+    .label-button
+      display block
+      width 165px
+      line-height 50px
+      border 2px solid #fff
+      color #fff
+      text-align center
+      text-transform uppercase
+      font-weight 300
+      cursor pointer
+      position relative
+      z-index 10
+      &:hover
+        background #fff
+        color #0062a5
+    .upload-status
+      display inline-block
+      vertical-align middle
+      width 50%
+      text-align center
+      color #fff
+      font-weight 300
+      @media SM
+        width 100%
+        text-align left
+        margin-top 15px
+      @media LG
+        width 49%
+        text-align center
+        padding-left 10px
+        padding-right 10px
+        margin-top 0

@@ -24,113 +24,411 @@ $(function() {
     };
     inputMask();
 
-    function mapsite() {
+    $('input[type=file]').on('change', function(){
+      if ( !$(this).val() == '' ) {
+        var filename = $('input[type=file]').val().split('\\').pop();
+        $(this).parent().next('.upload-status').text(filename);
+      } else {
+        $(this).parent().next('.upload-status').text('Файлы не добавлены');
+      }
+    });
 
-      $('.sitemap a').magnificPopup({
-
+    $('.popup-with-zoom-anim').magnificPopup({
         type: 'inline',
 
         fixedContentPos: false,
-
         fixedBgPos: true,
 
         overflowY: 'auto',
 
         closeBtnInside: true,
-
         preloader: false,
 
         midClick: true,
-
-        alignTop: true,
-
         removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+      });
 
-        mainClass: 'my-mfp-slide-bottom',
+    /* ONLY FOR TEST! */
+    $('.m_form .submit, .m_hook .submit').on('click', function () {
+      $('#succefulOpen').trigger('click');
+      $('#jobSuccefulOpen').trigger('click');
+      return false;
+    });
+    /* END ONLY FOR TEST! */
 
-        callbacks: {
 
-          open: function() {
+    function showAllBreadcrums() {
 
-            $('.mobile-menu-trigger').addClass('open');
 
-          },
+      $('.show-all-bc').on('click', function () {
 
-          beforeClose: function() {
 
-            $('.mobile-menu-trigger').removeClass('open');
+        if ( $(this).hasClass('open') ) {
 
-          }
+
+          $('.services-list').animate({height: '80px'}, 500);
+
+
+          $('.show-all-bc').removeClass('open').text('Показать всё');
+
+
+        } else {
+
+
+          var el = $('.services-list'),
+
+
+              curHeight = el.height(),
+
+
+              autoHeight = el.css('height', 'auto').height();
+
+
+          el.height(curHeight).animate({height: autoHeight}, 500);
+
+
+          $('.show-all-bc').addClass('open').text('Скрыть');
+
+
+    
+
 
         }
 
+
       });
+
 
     };
 
-    mapsite();
+
+    showAllBreadcrums();
+
 
     
 
-    function searchHeader() {
 
-      $('.show-search').on('click', function(){
+    function clientsCarousel() {
 
-        $(this).next().show(0, function(){
 
-          $(this).find('input[type="text"]').focus();
+      $('.clients-carousel').slick({
 
-        });
+
+        slidesToShow: 4,
+
+
+        slidesToScroll: 4,
+
+
+        appendArrows: '.clients-carousel-nav',
+
+
+        responsive: [
+
+
+          {
+
+
+            breakpoint: 992,
+
+
+            settings: {
+
+
+              slidesToShow: 3,
+
+
+              slidesToScroll: 3
+
+
+            }
+
+
+          },
+
+
+          {
+
+
+            breakpoint: 768,
+
+
+            settings: {
+
+
+              slidesToShow: 2,
+
+
+              slidesToScroll: 2
+
+
+            }
+
+
+          },
+
+
+          {
+
+
+            breakpoint: 479,
+
+
+            settings: {
+
+
+              slidesToShow: 1,
+
+
+              slidesToScroll: 1
+
+
+            }
+
+
+          },
+
+
+        ]
+
 
       });
 
-    
-
-      $('.controls form input[type="text"]').on('blur', function () {
-
-        $(this).parent().fadeOut(250)
-
-      });
 
     };
 
-    searchHeader();
+
+    clientsCarousel();
+
 
     
 
-    
 
-    
+    function mapsite() {
 
-    console.log('Layout generated');
 
-    
+      $('.sitemap a').magnificPopup({
 
-    function popups() {
-
-      $('.call-popup').magnificPopup({
 
         type: 'inline',
 
+
         fixedContentPos: false,
+
 
         fixedBgPos: true,
 
+
         overflowY: 'auto',
+
 
         closeBtnInside: true,
 
+
         preloader: false,
+
 
         midClick: true,
 
+
+        alignTop: true,
+
+
         removalDelay: 300,
 
-        mainClass: 'my-mfp-zoom-in'
+
+        mainClass: 'my-mfp-slide-bottom',
+
+
+        callbacks: {
+
+
+          open: function() {
+
+
+            $('.mobile-menu-trigger').addClass('open');
+
+
+          },
+
+
+          beforeClose: function() {
+
+
+            $('.mobile-menu-trigger').removeClass('open');
+
+
+          }
+
+
+        }
+
 
       });
 
+
     };
+
+
+    mapsite();
+
+
+    
+
+
+    function searchHeader() {
+
+
+      $('.show-search').on('click', function(){
+
+
+        $(this).next().show(0, function(){
+
+
+          $(this).find('input[type="text"]').focus();
+
+
+        });
+
+
+      });
+
+
+    
+
+
+      $('.controls form input[type="text"]').on('blur', function () {
+
+
+        $(this).parent().fadeOut(250)
+
+
+      });
+
+
+    };
+
+
+    searchHeader();
+
+
+    
+
+
+    
+
+
+    
+
+
+    console.log('Layout generated');
+
+
+    
+
+
+    //Main 'Revolution' carousel
+
+
+    jQuery('.tp-banner').revolution({
+
+
+      delay:90000,
+
+
+      startwidth:1170,
+
+
+      startheight:600,
+
+
+      hideThumbs:0,
+
+
+      autoHeight: "on",
+
+
+      // navigationType: "none",
+
+
+      nexttobullets: "nexttobullets",
+
+
+      hideTimerBar:"on",
+
+
+      fullWidth:"on",
+
+
+      forceFullWidth:"on"
+
+
+      // navigationHAlign:"left",
+
+
+      // navigationVAlign:"bottom",
+
+
+      // soloArrowLeftHalign:"left",
+
+
+      // soloArrowLeftValign:"bottom",
+
+
+      // soloArrowRightHalign:"left",
+
+
+      // soloArrowRightValign:"bottom",
+
+
+    });
+
+
+    // $('.tp-leftarrow, .tp-rightarrow, .carousel-calc').delay(3000).addClass('show');
+
+
+    
+
+
+    function popups() {
+
+
+      $('.call-popup').magnificPopup({
+
+
+        type: 'inline',
+
+
+        fixedContentPos: false,
+
+
+        fixedBgPos: true,
+
+
+        overflowY: 'auto',
+
+
+        closeBtnInside: true,
+
+
+        preloader: false,
+
+
+        midClick: true,
+
+
+        removalDelay: 300,
+
+
+        mainClass: 'my-mfp-zoom-in'
+
+
+      });
+
+
+    };
+
 
     popups();
 });

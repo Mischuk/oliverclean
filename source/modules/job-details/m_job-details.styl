@@ -1,0 +1,47 @@
+.m_job-details
+  background #f0f5f8
+  border 1px solid #eaf0f3
+  padding 30px
+  margin 30px 0
+  .price
+    @media screen and (max-width: 767px)
+      margin-bottom 40px
+  .price, .claims
+    position relative
+    padding-left 70px
+    &:before
+      content ''
+      position absolute
+      left 0
+      top 50%
+      size(50px)
+      margin-top -25px
+      border-radius 50%
+      background $yellow
+    &:after
+      content ''
+      position absolute
+      top 50%
+      background-image url("../images/sprite.png")
+  .price:after
+    left 12px
+    background-position -100px -100px
+    width 27px
+    height 25px
+    margin-top -(@height/2)
+  .claims:after
+    left 13px
+    background-position -150px -100px
+    width 24px
+    height 24px
+    margin-top -(@height/2)
+  .title
+    color #333
+    font-weight 300
+    font-size 18px
+    margin-bottom 20px
+    @media screen and (max-width: 767px)
+      margin-bottom 0
+  .value
+    font-weight 500
+    font-size 18px

@@ -4,6 +4,10 @@
   padding 20px
   max-width 96%
   margin 70px auto
+  @media LG
+    max-width 1070px
+    margin-bottom 20px
+    margin-top 20px
   .mfp-close
     font-weight 300
     font-family: 'Exo 2 Condensed'
@@ -50,3 +54,74 @@
   .secondary-sections
     .title
       border-bottom 3px solid $yellow
+#jobSucceful,
+#succeful,
+#onlineOrder,
+#onlineCallback
+  .mfp-close
+    text-indent -9999px !important
+    size(23px)
+    background url("../images/close.png") no-repeat 0 0 !important
+    right 20px
+    top 20px
+    &:active
+      top 20px !important
+.my-mfp-zoom-in.mfp-ready.mfp-bg
+  opacity .5
+#jobSucceful,
+#succeful
+  max-width 500px
+  height 600px
+  margin 0 auto
+  background url("../images/popups/thanks.jpg") no-repeat 50%
+  background-size cover
+  color #fff
+  padding 0 50px
+  box-shadow 0 5px 16px rgba(0,0,0,.2)
+  @media screen and (max-width: 420px)
+    padding 0 15px
+    height 400px
+  h2
+    font-size 36px
+    text-align center
+    @media screen and (max-width: 420px)
+      font-size 28px
+
+#onlineOrder,
+#onlineCallback
+  max-width 500px
+  margin 0 auto
+  background url("../images/popups/form.jpg") no-repeat 50%
+  background-size cover
+  color #fff
+  padding 0 50px
+  box-shadow 0 5px 16px rgba(0,0,0,.2)
+  @media screen and (max-width: 420px)
+    padding 0 15px
+  .title
+    font-size 48px
+    color #fff
+    @media screen and (max-width: 420px)
+      font-size 28px
+  .m_form
+    background none
+    border none
+    .upload-status
+      color #fff
+    .label-button
+      border-color #fff
+      color #fff
+      width 165px
+      &:hover
+        background #fff
+        color #0080d7
+    .submit
+      width 100%
+      max-width 100%
+
+#onlineCallback
+  padding 30px 50px
+  background-image url("../images/popups/callback.jpg")
+  .title + p
+    font-size 24px
+    line-height 1.2

@@ -1,0 +1,85 @@
+.m_breadcrumbs
+  position relative
+  border-bottom 1px solid $border
+  padding 25px 0
+  margin-bottom 30px
+  &.services-bc
+    border none
+    margin-bottom 0
+    padding-bottom 5px
+  @media SM
+    margin-bottom 50px
+  .section, ul
+    vertical-align top
+  .section
+    display inline-block
+    padding-right 25px
+    @media SM
+      margin-right 45px
+    a
+      position relative
+      background #0063a6
+      color #fff
+      text-decoration none
+      line-height 36px
+      display inline-block
+      vertical-align middle
+      font-size 20px
+      text-transform uppercase
+      font-weight 300
+      padding-left 15px
+      padding-right 5px
+      &:after
+        content ''
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 18px 0 18px 18px;
+        border-color: transparent transparent transparent #0064a6;
+        position absolute
+        right -18px
+        top 0
+      &:hover
+        background #0063a6 - 25%
+        &:after
+          border-color: transparent transparent transparent #0063a6 - 25%
+    .show-all-bc
+      display inline-block
+      width auto
+      cursor pointer
+      position relative
+      z-index 1
+      margin-top 10px
+      color #0063a6
+      border-bottom 1px dotted #0063a6
+      &:hover
+        color #333
+        border-color #333
+  ul
+    display inline
+    cursor default
+    li
+      display inline-block
+      vertical-align middle
+      line-height 36px
+      padding 0 5px
+      &.current
+        a
+          cursor default
+          background #d41a2f
+          color #fff
+          text-decoration none
+          border-radius 5px
+          padding 2px 5px 5px 5px
+  .services-list
+    display inline-block
+    vertical-align top
+    padding-left 150px
+    margin-top -70px
+    height 80px
+    overflow hidden
+    > li:first-child
+      display block
+      padding-left 0
+
+

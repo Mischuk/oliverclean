@@ -1,0 +1,42 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title История
+
+block content
+  main
+    .container-fluid
+      .m_breadcrumbs
+        .section
+          a(href="#") О компании
+        ul
+          li: a(href="#") Наша команда
+          li.current: a(href="#") Истории клиентов
+          li: a(href="#") Вакансии
+          li: a(href="#") Контакты
+      article
+        h2.heading Истории клиентов
+        p.lead Истории людей, которые работаю с нами
+      .row
+        .col-xs-12.col-sm-8
+          .m_story
+            .image: a(href="#" style="background-image: url('images/content/about/history/1.jpg')")
+            .desc
+              .title: a(href="#") Гранд Круиз
+              .section Гостиничный бизнес
+              p Оливер Клин является для нас самым надежным партнеров в клининговых услугах. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился
+        .col-xs-12.col-sm-4
+          .m_story.no-bg
+            .image: a(href="#" style="background-image: url('images/content/about/history/2.jpg')")
+            .desc
+              .title: a(href="#") Гранд Круиз
+              .section Гостиничный бизнес
+              p Оливер Клин является для нас самым надежным партнеров в клининговых услугах. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился
+      .row
+        .col-xs-12.col-sm-12
+          .m_story
+            .image: a(href="#" style="background-image: url('images/content/about/history/3.jpg')")
+            .desc
+              .title: a(href="#") Гранд Круиз
+              .section Гостиничный бизнес
+              p Оливер Клин является для нас самым надежным партнеров в клининговых услугах. Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился

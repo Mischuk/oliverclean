@@ -1,0 +1,60 @@
+.m_services
+  position relative
+  .item
+    position relative
+    background $background
+    border 1px solid $border
+    margin-top 15px
+    padding-bottom 20px
+    @media screen and (min-width: 480px)
+      height 390px
+      padding-bottom 0
+    @media SM
+      height 470px
+    @media MD
+      height 390px
+    .row,
+    .col-xs-5
+      height 100%
+      position static
+    .image
+      height 100%
+      background-size cover
+      background-position 50%
+      @media screen and (max-width: 479px)
+        position absolute
+        width 40%
+        left 0
+        top 0
+    nav
+      padding-top 15px
+      padding-right 15px
+      p
+        position relative
+        font-size 20px
+        padding-bottom 15px
+        margin-bottom 15px
+        font-weight 500
+        word-break break-word
+        @media SM
+          font-size 24px
+        &:after
+          content ''
+          width 70px
+          height 3px
+          background $yellow
+          position absolute
+          left 0
+          bottom 0
+      ul
+        li
+          & + li
+            margin-top 10px
+        a
+          display inline-block
+          vertical-align middle
+          font-size 18px
+          line-height 1.1
+          &:hover
+            color #000
+            text-decoration none

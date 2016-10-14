@@ -1,9 +1,13 @@
 .m_header
+  position relative
+  z-index 500
   background #fff
   height 110px
   box-shadow 0 5px 16px rgba(0,0,0,.2)
   @media SM
     clearfix()
+    height 130px
+  @media MD
     height 80px
   .container-fluid
     position relative
@@ -145,6 +149,8 @@
     height 50px
     display table
     padding 0 10px
+    position relative
+    z-index 500
     @media SM
       padding 0 15px
     @media MD
@@ -191,14 +197,6 @@
           border-color transparent
     .action
       a
-        anim()
         display block
-        color #fff
-        text-decoration none
-        text-transform uppercase
-        background $button
         line-height 32px
-        text-align center
-        &:hover
-          background $button - 10%
 

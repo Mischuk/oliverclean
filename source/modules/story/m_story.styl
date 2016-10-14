@@ -1,0 +1,68 @@
+.m_story
+  position relative
+  overflow hidden
+  height 430px
+  margin-bottom 30px
+  @media SM
+    height 500px
+  &:hover
+    .desc
+      background rgba(4, 28, 64, 1)
+  .image
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    a
+      display block
+      size(100%)
+      background-repeat no-repeat
+      background-position 50%
+      background-size cover
+  .desc
+    anim()
+    position absolute
+    left 0
+    bottom 0
+    width 100%
+    background rgba(4, 28, 64, .8)
+    color #fff
+    padding 10px 20px
+    @media SM
+      padding 15px 30px
+    p
+      margin-bottom 0
+      margin-top 15px
+      font-size 18px
+      line-height 24px
+    .section
+      margin-top 10px
+    .title
+      a
+        vertical-align middle
+        font-size 40px
+        font-weight 500
+        color #fff
+        text-decoration none
+        border-bottom 1px solid #fff
+        &:hover
+          border-color transparent
+  &.no-bg
+    @media screen and (max-width: 767px)
+      height auto
+    .image
+      position static
+      height 250px
+    .desc
+      position static
+      background none
+      color #333
+      padding-left 0
+      padding-top 5px
+      .title
+        a
+          color #0062a5
+          border-color #0062a5
+          &:hover
+            border-color transparent

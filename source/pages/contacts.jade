@@ -1,0 +1,61 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Контакты
+
+block content
+  main
+    .container-fluid
+      .m_breadcrumbs
+        .section
+          a(href="#") О компании
+        ul
+          li: a(href="#") Наша команда
+          li: a(href="#") Истории клиентов
+          li: a(href="#") Вакансии
+          li.current: a(href="#") Контакты
+      article
+        .m_contacts
+          .row
+            .col-xs-12.col-sm-6
+              h2.heading Контактная информация
+              .details
+                .locate Россия, Санкт-Петербург, Проспект Шаумяна, дом 8 кор. 1, Е <br> <a href="#">Показать на карте</a>
+                .tel +7 (812) 704-16-06, +7 (812) 704-16-02
+                .email: a(href="#") info@oliverclin.ru
+            .col-xs-12.col-sm-6
+              .m_form
+                .title Свяжитесь с нами
+                form
+                  .row
+                    .col-xs-12.col-sm-6
+                      .form-row: input(class="input" type="text" placeholder="Ваше имя")
+                    .col-xs-12.col-sm-6
+                      .form-row: input(class="input" type="email" placeholder="E-mail")
+                  .form-row: textarea(placeholder="Дополнительная информация")
+                  .form-row
+                    input(class="submit button" type="submit" value="Откликнуться")
+    script(src="//api-maps.yandex.ru/2.1/?lang=ru_RU")
+    script.
+      ymaps.ready(function () {
+          var myMap = new ymaps.Map('map', {
+                  center: [59.936048, 30.41639],
+                  zoom: 16,
+                  controls: ['zoomControl']
+              }, {
+                  searchControlProvider: 'yandex#search'
+              }),
+              myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                  hintContent: '',
+                  balloonContent: ''
+              }, {
+                  iconLayout: 'default#image',
+                  iconImageHref: 'images/marker.png',
+                  iconImageSize: [73, 81],
+                  iconImageOffset: [-32, -65]
+              });
+
+          myMap.geoObjects.add(myPlacemark);
+          myMap.behaviors.disable('scrollZoom');
+      });
+    #map

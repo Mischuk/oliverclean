@@ -1,0 +1,76 @@
+.m_steps
+  position relative
+  background #f7f7f7
+  text-align center
+  .item
+    position relative
+    display inline-block
+    vertical-align top
+    width 19%
+    @media screen and (max-width: 767px)
+      width 32%
+      margin-bottom 30px
+    @media screen and (max-width: 420px)
+      width 48%
+    &:nth-child(1) .image:after
+      width 42px
+      height 97px
+      margin-left -(@width/2)
+      margin-top -(@height/2)
+      background url("../images/steps/num-1.png") no-repeat 0 0
+    &:nth-child(2) .image:after
+      width 60px
+      height 99px
+      margin-left -(@width/2)
+      margin-top -(@height/2)
+      background url("../images/steps/num-2.png") no-repeat 0 0
+    &:nth-child(3) .image:after
+      width 57px
+      height 101px
+      margin-left -(@width/2)
+      margin-top -(@height/2)
+      background url("../images/steps/num-3.png") no-repeat 0 0
+    &:nth-child(4) .image:after
+      width 71px
+      height 97px
+      margin-left -(@width/2)
+      margin-top -(@height/2)
+      background url("../images/steps/num-4.png") no-repeat 0 0
+    &:nth-child(5) .image:after
+      width 57px
+      height 97px
+      margin-left -(@width/2)
+      margin-top -(@height/2)
+      background url("../images/steps/num-5.png") no-repeat 0 0
+    &:last-child:after
+      display none !important
+    &:after
+      content ''
+      width 43px
+      height 31px
+      background url("../images/steps/arrow.png") no-repeat 0 0
+      position absolute
+      right -20px
+      top 35px
+      @media screen and (max-width: 767px)
+        display none !important
+    .image
+      position relative
+      height 100px
+      line-height 100px
+      img
+        position relative
+        z-index 1
+      &:after
+        content ''
+        position absolute
+        left 50%
+        top 50%
+    .desc
+      font-size 18px
+      line-height 26px
+      color #333
+      margin-top 20px
+      @media screen and (max-width: 767px)
+        padding-left 15px
+        padding-right 15px

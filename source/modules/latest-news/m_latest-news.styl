@@ -1,0 +1,45 @@
+.m_latest-news
+  margin-top 30px
+  @media SM
+    margin-top 0
+  .item
+    margin-bottom 30px
+    .post-date
+      color #999
+    .desc
+      padding 10px 0
+      color #333
+    .title
+      a
+        color #0062a5
+        &:hover
+          color #333
+          text-decoration none
+  .all-news
+    a
+      display inline-block
+      vertical-align middle
+      position relative
+      background $yellow
+      color #fff
+      text-decoration none
+      text-transform uppercase
+      font-size 14px
+      font-weight 300
+      height 22px
+      line-height 22px
+      padding-left 5px
+      &:after
+        content ''
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 11px 0 11px 11px;
+        border-color: transparent transparent transparent #fdc630;
+        position absolute
+        right -11px
+        top 0
+      &:hover
+        background $yellow - 15%
+        &:after
+          border-color: transparent transparent transparent $yellow - 15%

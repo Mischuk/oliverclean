@@ -1,0 +1,46 @@
+.m_contacts
+  margin-bottom 60px
+  .details
+    padding-top 10px
+    > div
+      position relative
+      padding-left 70px
+      color #333
+      font-size 18px
+      line-height 1.5
+      margin 30px 0
+      &:after
+        content ''
+        size(40px)
+        position absolute
+        left 0
+        top 50%
+        margin-top -20px
+        border-radius 50%
+      a
+        color #0063a6
+        &:hover
+          color #333
+    .locate:after
+      background: url('../images/sprite.png') no-repeat 0 -150px;
+    .tel:after
+      background: url('../images/sprite.png') no-repeat -50px -150px;
+    .email:after
+      background: url('../images/sprite.png') no-repeat -100px -150px;
+    .tel
+      color #000
+      font-size 24px
+      font-weight 500
+    .email a
+      text-decoration none
+
+#map
+  height 500px
+  width 100%
+  margin-bottom -30px
+  @media screen and (max-width: 767px)
+    height 400px
+  @media screen and (max-width: 568px)
+    height 300px
+  @media screen and (max-width: 360px)
+    height 200px

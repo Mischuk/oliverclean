@@ -1,0 +1,85 @@
+.m_clients
+  position relative
+  background #f7f7f7
+  &:last-child
+    top 30px
+  .top .container-fluid
+    position relative
+  .bottom .container-fluid
+    padding-left 0
+    padding-right 0
+  .slick-arrow
+    position relative
+    width 36px
+    height 36px
+    border 1px solid #0260a6
+    border-radius 50%
+    background none
+    text-indent -9999px
+    position absolute
+    right 15px
+    top 0
+    @media SM
+      top 8px
+    &:hover
+      background #0260a6
+    &:after
+      content ''
+      position absolute
+      left 50%
+      top 50%
+      background-image url("../images/sprite.png")
+      background-repeat no-repeat
+      width 8px
+      height 13px
+      margin-left -(@width/2)
+      margin-top -(@height/2)
+    &.slick-next
+      &:after
+        background-position -150px -54px
+      &:hover:after
+        background-position -150px 0
+    &.slick-prev
+      right 70px
+      &:after
+        background-position -100px -54px
+      &:hover:after
+        background-position -100px 0
+  .slide
+    padding-left 15px
+    padding-right 15px
+  .image
+    height 140px
+    line-height 140px
+    border 1px solid $border
+    background #fff
+    text-align center
+    img
+      max-width 80%
+      max-height 80%
+      display inline-block
+      vertical-align middle
+  .desc
+    padding 10px 0
+    font-size 16px
+    line-height 24px
+  .options
+    b
+      display block
+    .time, .square
+      position relative
+      padding-left 45px
+      height 60px
+      &:after
+        content ''
+        position absolute
+        left 0
+        top 5px
+        width 35px
+        height 35px
+        background-image url('../images/sprite.png')
+        background-repeat no-repeat
+    .time:after
+      background-position 0 -54px
+    .square:after
+      background-position -50px -54px

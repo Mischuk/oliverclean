@@ -13,7 +13,7 @@
 	</head>
 
 	<body>
-		<!-- HEADER-->
+		<!-- Header-->
 		<header class="m_header">
 			<div class="container-fluid">
 				<div class="logo">
@@ -56,143 +56,526 @@
 						<a href="#">+7 (812) 550-07-70</a>
 					</div>
 					<div class="callback">
-						<a href="#">Связаться с нами</a>
+						<a class="popup-with-zoom-anim" href="#onlineCallback">Связаться с нами</a>
 					</div>
 					<div class="action">
-						<a href="#">Онлайн заявка</a>
+						<a class="button popup-with-zoom-anim" href="#onlineOrder">Онлайн заявка</a>
 					</div>
 				</div>
 			</div>
 		</header>
-		<!-- Sitemap-->
-		<div class="zoom-anim-dialog mfp-hide" id="sitemap">
-			<div class="main-sections">
-				<div class="title">О компании</div>
-				<nav>
-					<ul>
-						<li>
-							<a href="#">О нас</a>
-						</li>
-						<li>
-							<a href="#">Наша команда</a>
-						</li>
-						<li>
-							<a href="#">Истории клиентов</a>
-						</li>
-						<li>
-							<a href="#">Вакансии</a>
-						</li>
-						<li>
-							<a href="#">Контакты</a>
-						</li>
-					</ul>
-				</nav>
+		<div class="zoom-anim-dialog mfp-hide" id="onlineOrder">
+			<div class="m_form">
+				<div class="title">Онлайн заявка</div>
+				<form>
+					<div class="form-row">
+						<input class="input" type="text" placeholder="Ваше имя">
+					</div>
+					<div class="form-row">
+						<input class="input" type="tel" placeholder="Ваш телефон">
+					</div>
+					<div class="form-row">
+						<input class="input" type="email" placeholder="E-mail">
+					</div>
+					<div class="form-row">
+						<div class="file-upload">
+							<label>
+								<input type="file">
+								<div class="label-button">Загрузить файл</div>
+							</label>
+							<div class="upload-status">Файлы не добавлены</div>
+						</div>
+					</div>
+					<div class="form-row">
+						<textarea placeholder="Дополнительная информация"></textarea>
+					</div>
+					<div class="form-row">
+						<input class="submit button" type="submit" value="Отправить заявку">
+					</div>
+				</form>
 			</div>
-			<div class="secondary-sections">
-				<div class="title">Услуги</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-6">
-						<nav>
-							<p>Обслуживание зданий и сооружений</p>
-							<ul>
-								<li>
-									<a href="#">Комплексная поддерживающая уборка</a>
-								</li>
-								<li>
-									<a href="#">Генеральная уборка</a>
-								</li>
-								<li>
-									<a href="#">Послестроительная уборка</a>
-								</li>
-								<li>
-									<a href="#">Мойка фасадов, витражей, окон</a>
-								</li>
-								<li>
-									<a href="#">Обеспечение расходными материалами сан. зон</a>
-								</li>
-								<li>
-									<a href="#">Разработка и внедрение систем грязезащиты</a>
-								</li>
-							</ul>
-						</nav>
+		</div>
+		<div class="zoom-anim-dialog mfp-hide" id="onlineCallback">
+			<div class="m_form">
+				<div class="title">Заказать звонок</div>
+				<p>Мы свяжемся с вами в удобное для вас время</p>
+				<form>
+					<div class="form-row">
+						<input class="input" type="text" placeholder="Ваше имя">
 					</div>
-					<div class="col-xs-12 col-sm-6">
-						<nav>
-							<p>Обслуживание территорий</p>
-							<ul>
-								<li>
-									<a href="#">Генеральная уборка территорий</a>
-								</li>
-								<li>
-									<a href="#">Поддерживающая уборка, лето/зима</a>
-								</li>
-								<li>
-									<a href="#">Вывоз снега</a>
-								</li>
-								<li>
-									<a href="#">Вывоз ТБО</a>
-								</li>
-							</ul>
-						</nav>
+					<div class="form-row">
+						<input class="input" type="tel" placeholder="Ваш телефон">
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-6">
-						<nav>
-							<p>Специализированные работы</p>
-							<ul>
-								<li>
-									<a href="#">Химическая чистка ковровых покрытий</a>
-								</li>
-								<li>
-									<a href="#">Химическая чистка текстильных поверхностей, мебели</a>
-								</li>
-								<li>
-									<a href="#">Нанесение полимерных покрытий</a>
-								</li>
-								<li>
-									<a href="#">Шлифовка/Полировка искуственных и натуральных поверхностей</a>
-								</li>
-								<li>
-									<a href="#">Кристализация мраморных полов</a>
-								</li>
-								<li>
-									<a href="#">Глубокая чиста пола</a>
-								</li>
-							</ul>
-						</nav>
+					<div class="form-row">
+						<input class="input" type="text" placeholder="Когда вам перезвонить?">
 					</div>
-					<div class="col-xs-12 col-sm-6">
-						<nav>
-							<p>Клининговый консалтинг</p>
-							<ul>
-								<li>
-									<a href="#">Консультирование</a>
-								</li>
-								<li>
-									<a href="#">Организация службы клининга</a>
-								</li>
-								<li>
-									<a href="#">Аудит</a>
-								</li>
-								<li>
-									<a href="#">Обучение персонала</a>
-								</li>
-								<li>
-									<a href="#">Побор персонала в сфере клининга</a>
-								</li>
-								<li>
-									<a href="#">Оптимизация расходов</a>
-								</li>
-							</ul>
-						</nav>
+					<div class="form-row">
+						<input class="submit button" type="submit" value="Отправить заявку">
+					</div>
+				</form>
+			</div>
+		</div>
+		<a class="popup-with-zoom-anim" id="succefulOpen" href="#succeful">
+			<div class="zoom-anim-dialog mfp-hide" id="succeful">
+				<div class="vertical-outer">
+					<div class="vertical-inner">
+						<h2>Спасибо за обращение!
+							<br> Наш менеджер свяжется с вами в ближайшее время.</h2>
 					</div>
 				</div>
 			</div>
+		</a>
+		<div class="m_lead-carousel">
+			<div class="tp-banner">
+				<ul>
+					<li data-transition="fade" data-slotamount="1" data-masterspeed="100">
+						<!-- Background-->
+						<img data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" src="images/content/carousel-lead/1.jpg" alt="slidebg1">
+						<div class="container-fluid">
+							<!-- Layer #1-->
+							<div class="tp-caption skewfromrightshort fadeout slide-title" data-x="0" data-y="50" data-speed="500" data-start="1000" data-easing="Power4.easeOut">
+								<div class="title">
+									<span>Комплексная поддерживающая уборка</span>
+								</div>
+							</div>
+							<!-- Layer #2-->
+							<div class="tp-caption fadeout buy" data-x="0" data-y="165" data-speed="1000" data-start="1500" data-easing="Power4.easeOut">
+								<div class="desc">Поддерживающая уборка придаст помещению чистоту и свежесть. Особенно эта услуга актуальна в осенне-весеннее время, когда грязь с улицы на обуви разносится по всему помещению. Зимой регулярная уборка также полезна, так как из-за повышенной сухости
+									воздуха в нём содержится больше пыли, которая оседает на любых поверхностях.</div>
+								<div class="bonus">7 дней уборки бесплатно</div>
+							</div>
+							<!-- Layer #3-->
+							<div class="tp-caption fadeout action" data-x="0" data-y="bottom" data-voffset="-120" data-speed="1000" data-start="2000" data-easing="Power4.easeOut">
+								<a class="details" href="#">Подробнее</a>
+							</div>
+						</div>
+					</li>
+					<li data-transition="fade" data-slotamount="1" data-masterspeed="100">
+						<!-- Background-->
+						<img data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" src="images/content/carousel-lead/1.jpg" alt="slidebg1">
+						<div class="container-fluid">
+							<!-- Layer #1-->
+							<div class="tp-caption skewfromrightshort fadeout slide-title" data-x="0" data-y="50" data-speed="500" data-start="1000" data-easing="Power4.easeOut">
+								<div class="title">
+									<span>Комплексная поддерживающая уборка</span>
+								</div>
+							</div>
+							<!-- Layer #2-->
+							<div class="tp-caption fadeout buy" data-x="0" data-y="165" data-speed="1000" data-start="1500" data-easing="Power4.easeOut">
+								<div class="desc">Поддерживающая уборка придаст помещению чистоту и свежесть. Особенно эта услуга актуальна в осенне-весеннее время, когда грязь с улицы на обуви разносится по всему помещению. Зимой регулярная уборка также полезна, так как из-за повышенной сухости
+									воздуха в нём содержится больше пыли, которая оседает на любых поверхностях.</div>
+								<div class="bonus">7 дней уборки бесплатно</div>
+							</div>
+							<!-- Layer #3-->
+							<div class="tp-caption fadeout action" data-x="0" data-y="bottom" data-voffset="-120" data-speed="1000" data-start="2000" data-easing="Power4.easeOut">
+								<a class="details" href="#">Подробнее</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<div class="wrapper">
-			<h1>Hello, world!</h1>
-		</div>
+		<section class="m_services">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<div class="item">
+							<div class="row">
+								<div class="col-xs-5 col-sm-5">
+									<div class="image" style="background-image: url('images/services/1.jpg')"></div>
+								</div>
+								<div class="col-xs-7 col-sm-7">
+									<nav>
+										<p>Обслуживание зданий и сооружений</p>
+										<ul>
+											<li>
+												<a href="#">Комплексная поддерживающая уборка</a>
+											</li>
+											<li>
+												<a href="#">Генеральная уборка</a>
+											</li>
+											<li>
+												<a href="#">Послестроительная уборка</a>
+											</li>
+											<li>
+												<a href="#">Мойка фасадов, витражей, окон</a>
+											</li>
+											<li>
+												<a href="#">Обеспечение расходными материалами сан. зон</a>
+											</li>
+											<li>
+												<a href="#">Разработка и внедрение систем грязезащиты</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<div class="item">
+							<div class="row">
+								<div class="col-xs-5 col-sm-5">
+									<div class="image" style="background-image: url('images/services/2.jpg')"></div>
+								</div>
+								<div class="col-xs-7 col-sm-7">
+									<nav>
+										<p>Обслуживание территорий</p>
+										<ul>
+											<li>
+												<a href="#">Генеральная уборка территорий</a>
+											</li>
+											<li>
+												<a href="#">Поддерживающая уборка, лето/зима</a>
+											</li>
+											<li>
+												<a href="#">Вывоз снега</a>
+											</li>
+											<li>
+												<a href="#">Вывоз ТБО</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<div class="item">
+							<div class="row">
+								<div class="col-xs-5 col-sm-5">
+									<div class="image" style="background-image: url('images/services/3.jpg')"></div>
+								</div>
+								<div class="col-xs-7 col-sm-7">
+									<nav>
+										<p>Специализированные работы</p>
+										<ul>
+											<li>
+												<a href="#">Химическая чистка ковровых покрытий</a>
+											</li>
+											<li>
+												<a href="#">Химическая чистка текстильных поверхностей, мебели</a>
+											</li>
+											<li>
+												<a href="#">Нанесение полимерных покрытий</a>
+											</li>
+											<li>
+												<a href="#">Шлифовка/Полировка искуственных и натуральных поверхностей</a>
+											</li>
+											<li>
+												<a href="#">Кристализация мраморных полов</a>
+											</li>
+											<li>
+												<a href="#">Глубокая чиста пола</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<div class="item">
+							<div class="row">
+								<div class="col-xs-5 col-sm-5">
+									<div class="image" style="background-image: url('images/services/4.jpg')"></div>
+								</div>
+								<div class="col-xs-7 col-sm-7">
+									<nav>
+										<p>Клининговый консалтинг</p>
+										<ul>
+											<li>
+												<a href="#">Консультирование</a>
+											</li>
+											<li>
+												<a href="#">Организация службы клининга</a>
+											</li>
+											<li>
+												<a href="#">Аудит</a>
+											</li>
+											<li>
+												<a href="#">Обучение персонала</a>
+											</li>
+											<li>
+												<a href="#">Побор персонала в сфере клининга</a>
+											</li>
+											<li>
+												<a href="#">Оптимизация расходов</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="m_pluses">
+			<div class="container-fluid">
+				<div class="heading center">Наши преимущества</div>
+				<div class="list">
+					<div class="item">
+						<div class="image">
+							<img src="images/pluses/1.png" alt>
+						</div>
+						<div class="desc">Страхование ответственности</div>
+					</div>
+					<div class="item">
+						<div class="image">
+							<img src="images/pluses/2.png" alt>
+						</div>
+						<div class="desc">Школа обучения персонала</div>
+					</div>
+					<div class="item">
+						<div class="image">
+							<img src="images/pluses/3.png" alt>
+						</div>
+						<div class="desc">Современное оборудование и технологии уборки</div>
+					</div>
+					<div class="item">
+						<div class="image">
+							<img src="images/pluses/4.png" alt>
+						</div>
+						<div class="desc">Отсрочка платежа до 180 дней (аккредитив)</div>
+					</div>
+					<div class="item">
+						<div class="image">
+							<img src="images/pluses/5.png" alt>
+						</div>
+						<div class="desc">Собственный рекрутинг</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="m_guaranteed">
+			<div class="container-fluid">
+				<div class="heading center no-line">Гарантируем качество</div>
+				<p>Все виды работ осуществляются согласно стандартам качества</p>
+				<div class="list">
+					<div class="item">
+						<div class="image">
+							<img src="images/guaranteed/1.png" alt>
+						</div>
+						<div class="desc">Евро-стандарт
+							<br>ISO 9001</div>
+					</div>
+					<div class="item">
+						<div class="image">
+							<img src="images/guaranteed/2.png" alt>
+						</div>
+						<div class="desc">Стандарт
+							<br>Green Seel</div>
+					</div>
+					<div class="item">
+						<div class="image">
+							<img src="images/guaranteed/3.png" alt>
+						</div>
+						<div class="desc">ГОСТ Р 51870—2014
+							<br>«Услуги профессиональной уборки»</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="m_clients">
+			<div class="top">
+				<div class="container-fluid">
+					<div class="heading arrows">Наши клиенты</div>
+					<div class="clients-carousel-nav"></div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="container-fluid">
+					<div class="clients-carousel">
+						<div class="slide">
+							<div class="image">
+								<img src="images/content/clients/1.jpg" alt>
+							</div>
+							<div class="desc">Провели генеральную уборку помещений на Международном юридическом форуме Санкт- Петербурга.</div>
+							<div class="options">
+								<div class="time">
+									<b>2 года</b> сотрудничества</div>
+								<div class="square">
+									<b>21 850 м
+										<sup>2</sup>
+									</b> убираемых площадей</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="image">
+								<img src="images/content/clients/2.jpg" alt>
+							</div>
+							<div class="desc">Провели генеральную уборку помещений на Международном юридическом форуме Санкт- Петербурга.</div>
+							<div class="options">
+								<div class="time">
+									<b>2 года</b> сотрудничества</div>
+								<div class="square">
+									<b>21 850 м
+										<sup>2</sup>
+									</b> убираемых площадей</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="image">
+								<img src="images/content/clients/3.jpg" alt>
+							</div>
+							<div class="desc">Провели генеральную уборку помещений на Международном юридическом форуме Санкт- Петербурга.</div>
+							<div class="options">
+								<div class="time">
+									<b>2 года</b> сотрудничества</div>
+								<div class="square">
+									<b>21 850 м
+										<sup>2</sup>
+									</b> убираемых площадей</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="image">
+								<img src="images/content/clients/4.jpg" alt>
+							</div>
+							<div class="desc">Провели генеральную уборку помещений на Международном юридическом форуме Санкт- Петербурга.</div>
+							<div class="options">
+								<div class="time">
+									<b>2 года</b> сотрудничества</div>
+								<div class="square">
+									<b>21 850 м
+										<sup>2</sup>
+									</b> убираемых площадей</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="image">
+								<img src="images/content/clients/3.jpg" alt>
+							</div>
+							<div class="desc">Провели генеральную уборку помещений на Международном юридическом форуме Санкт- Петербурга.</div>
+							<div class="options">
+								<div class="time">
+									<b>2 года</b> сотрудничества</div>
+								<div class="square">
+									<b>21 850 м
+										<sup>2</sup>
+									</b> убираемых площадей</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="image">
+								<img src="images/content/clients/2.jpg" alt>
+							</div>
+							<div class="desc">Провели генеральную уборку помещений на Международном юридическом форуме Санкт- Петербурга.</div>
+							<div class="options">
+								<div class="time">
+									<b>2 года</b> сотрудничества</div>
+								<div class="square">
+									<b>21 850 м
+										<sup>2</sup>
+									</b> убираемых площадей</div>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="image">
+								<img src="images/content/clients/3.jpg" alt>
+							</div>
+							<div class="desc">Провели генеральную уборку помещений на Международном юридическом форуме Санкт- Петербурга.</div>
+							<div class="options">
+								<div class="time">
+									<b>2 года</b> сотрудничества</div>
+								<div class="square">
+									<b>21 850 м
+										<sup>2</sup>
+									</b> убираемых площадей</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="m_hook">
+			<div class="container-fluid">
+				<div class="heading no-line white">Отправьте заявку на клининговые услуги</div>
+				<form>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4">
+							<input class="input" type="text" placeholder="Ваше имя">
+						</div>
+						<div class="col-xs-12 col-sm-4">
+							<input class="input" type="tel" placeholder="Ваш телефон">
+						</div>
+						<div class="col-xs-12 col-sm-4">
+							<input class="input" type="email" placeholder="E-mail">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-8">
+							<textarea placeholder="Дополнительная информация"></textarea>
+						</div>
+						<div class="col-xs-12 col-sm-4">
+							<div class="file-upload">
+								<label>
+									<input type="file">
+									<div class="label-button">Загрузить файл</div>
+								</label>
+								<div class="upload-status">Файлы не добавлены</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12">
+							<input class="submit button" type="submit" value="Отправить заявку">
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-8">
+					<article>
+						<div class="heading">Коротко о нас</div>
+						<p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными
+							чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло. Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами. «Что со мной случилось?» – подумал
+							он.</p>
+						<div class="images">
+							<img src="images/content/articles/1.jpg" alt>
+							<img src="images/content/articles/2.jpg" alt>
+						</div>
+						<p>Это не было сном. Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах. Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет,
+							который он недавно вырезал из иллюстрированного журнала и вставил в красивую золоченую рамку. На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой целиком исчезала
+							ее рука.</p>
+					</article>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<div class="m_latest-news">
+						<div class="heading">Новости</div>
+						<div class="list">
+							<div class="item">
+								<div class="title">
+									<a href="#">Заголовок новостной записи</a>
+								</div>
+								<div class="desc">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.</div>
+								<div class="post-date">21 июля 2016</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<a href="#">Заголовок новостной записи</a>
+								</div>
+								<div class="desc">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.</div>
+								<div class="post-date">21 июля 2016</div>
+							</div>
+							<div class="item">
+								<div class="title">
+									<a href="#">Заголовок новостной записи</a>
+								</div>
+								<div class="desc">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.</div>
+								<div class="post-date">21 июля 2016</div>
+							</div>
+						</div>
+						<div class="all-news">
+							<a href="#">Все новости</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- FOOTER-->
 		<footer class="m_footer">
 			<div class="container-fluid">
@@ -306,6 +689,7 @@
 				</div>
 			</div>
 		</footer>
+		<!-- Popups-->
 		<!-- Sitemap-->
 		<div class="zoom-anim-dialog mfp-hide" id="sitemap">
 			<div class="main-sections">
